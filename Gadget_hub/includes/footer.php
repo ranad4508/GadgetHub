@@ -30,7 +30,7 @@ echo "<script>window.location.href ='index.php'</script>";
                     <div class="row footer_wd_inner">
                         <div class="col-lg-3 col-6">
                             <aside class="f_widget f_about_widget">
-                                <h1>GadjetHub</h1>
+                                <h1>GadgetHub</h1>
 <?php
 
 $ret=mysqli_query($con,"select * from tblpage where PageType='aboutus' ");
@@ -54,16 +54,16 @@ while ($row=mysqli_fetch_array($ret)) {
                                 </div>
                                 <ul class="list_style">
                                     <li><a href="index.php">Home</a></li>
-                                    <li><a href="cake.php">Our Products</a></li>
+                                    <li><a href="product.php">Our Products</a></li>
                                     <li><a href="about-us.php">About Us</a></li>
                                     <li><a href="contact.php">Contact Us</a></li>
                                     <?php if (strlen($_SESSION['fosuid']==0)) {?>
                                 <li><a href="registration.php">Sign up</a></li>
                                 <li><a href="login.php">Sign in</a></li>
-                                <li><a href="cart.html">Track Order</a></li><?php } ?>
+                                <li><a href="track-order.php">Track Order</a></li><?php } ?>
                                 <?php if (strlen($_SESSION['fosuid']>0)) {?>
-                                <li><a href="registration.php">Cart Page</a></li>
-                                <li><a href="login.php">My Orders</a></li>
+                                <li><a href="cart.php">Cart Page</a></li>
+                                <li><a href="my-order.php">My Orders</a></li>
                                 <?php } ?>
                                 </ul>
                             </aside>
