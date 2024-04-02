@@ -3,7 +3,7 @@
         <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
                 <div class="dropdown profile-element">
-                    <img alt="image" class="rounded-circle" src="img/chef/chef1.jpg" />
+                    <img alt="image" class="rounded-circle" src="../img/client/client-1.png" />
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <?php
                         $admid = $_SESSION['fosaid'];
